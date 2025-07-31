@@ -28,7 +28,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "contentlayer": "^0.3.2",
-    "esbuild": "^0.25.8",
+    "esbuild": "^0.18.20",
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
     "eslint-config-prettier": "^10.1.8",
