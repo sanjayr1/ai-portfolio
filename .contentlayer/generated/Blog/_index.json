@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Hello World",
+    "date": "2024-01-01T00:00:00.000Z",
+    "description": "My first blog post",
+    "body": {
+      "raw": "\nWelcome to my portfolio powered by **Next.js**, **Tailwind CSS**, and **Contentlayer**!\n",
+      "code": "var Component=(()=>{var p=Object.create;var s=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,j=Object.prototype.hasOwnProperty;var f=(n,t)=>()=>(t||n((t={exports:{}}).exports,t),t.exports),u=(n,t)=>{for(var e in t)s(n,e,{get:t[e],enumerable:!0})},i=(n,t,e,c)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of m(t))!j.call(n,r)&&r!==e&&s(n,r,{get:()=>t[r],enumerable:!(c=x(t,r))||c.enumerable});return n};var _=(n,t,e)=>(e=n!=null?p(g(n)):{},i(t||!n||!n.__esModule?s(e,\"default\",{value:n,enumerable:!0}):e,n)),h=n=>i(s({},\"__esModule\",{value:!0}),n);var a=f((D,l)=>{l.exports=_jsx_runtime});var M={};u(M,{default:()=>C,frontmatter:()=>y});var o=_(a()),y={title:\"Hello World\",date:\"2024-01-01\",description:\"My first blog post\"};function d(n){let t=Object.assign({p:\"p\",strong:\"strong\"},n.components);return(0,o.jsxs)(t.p,{children:[\"Welcome to my portfolio powered by \",(0,o.jsx)(t.strong,{children:\"Next.js\"}),\", \",(0,o.jsx)(t.strong,{children:\"Tailwind CSS\"}),\", and \",(0,o.jsx)(t.strong,{children:\"Contentlayer\"}),\"!\"]})}function b(n={}){let{wrapper:t}=n.components||{};return t?(0,o.jsx)(t,Object.assign({},n,{children:(0,o.jsx)(d,n)})):d(n)}var C=b;return h(M);})();\n;return Component;"
+    },
+    "_id": "blog/hello-world.mdx",
+    "_raw": {
+      "sourceFilePath": "blog/hello-world.mdx",
+      "sourceFileName": "hello-world.mdx",
+      "sourceFileDir": "blog",
+      "contentType": "mdx",
+      "flattenedPath": "blog/hello-world"
+    },
+    "type": "Blog",
+    "slug": "hello-world"
+  }
+]
