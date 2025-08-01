@@ -26,7 +26,7 @@ Create a personal website that demonstrates end-to-end TypeScript/React/Node pro
 
 ## Stretch ideas
 
-• Integrate OpenAI API demo (e.g. blog-summarizer) to highlight AI skills.
+• Integrate OpenAI API demo (e.g. blog-summarizer) to highlight AI skills.  
 • Admin-only GitHub webhook to rebuild site when pushing new content.
 
 ---
@@ -43,3 +43,51 @@ Create a personal website that demonstrates end-to-end TypeScript/React/Node pro
 8. Configure CI.
 9. Configure Vercel project.
 10. Polish (SEO, analytics, testing).
+
+---
+
+## Visual Design (MVP – April 2025)
+
+### Template foundation
+* Fork of `shadcn-ui/ui` repository (`apps/www`) – one-page scroll layout.
+* Remove product-marketing pages; keep Hero, About, Experience, Technologies, Projects, Blog, Contact anchors.
+
+### Color palette (High-Altitude Cool – Soft)
+| Token | Light | Dark | Notes |
+|-------|-------|------|-------|
+| Background | `#F8FAFC` | `#0E1824` | off-white → deep navy |
+| Surface | `#FFFFFF` | `#152232` | cards, nav |
+| Text-primary | `#1E293B` | `#E2E8F0` | slate 800 / slate 200 |
+| Accent | `#2CB1BC` | `#22D3EE` | glacier teal – links, buttons |
+| Secondary | `#FB8C35` | `#FDBA74` | sandstone – hovers, highlights |
+| Success | `#16A34A` | `#22C55E` | pine green badges |
+
+### Typography
+* Headings: **Geist Sans**  
+* Body: **Inter**  
+* Code: **JetBrains Mono**
+* Logo: `Sanjay Roberts_` (underscore tinted accent color).
+
+### Copy snapshot
+* **Hero title:** “Senior Data Engineer”  
+* **Tagline:** “Building reliable data platforms & AI-ready pipelines in the Rockies.”  
+* **Bio (short):** “Denver-based engineer with 8 years turning petabytes into insight. Cloud-native, SQL-loving, happiest above 10 000 ft with my dog.”
+
+### Section outline
+1. **Hero** – gradient background, CTA buttons (`View Projects`, `Read Blog`, `Get in Touch`).
+2. **About Me** – two concise paragraphs (~110 words) + circular headshot.
+3. **Experience** – timeline cards (ZenHome, Twitch, Meta, Spectrum).
+4. **Technologies** – 3×3 icon grid (Snowflake, dbt, Airflow, etc.).
+5. **Projects / Case Studies** – hero cards linking to MDX pages.
+6. **Blog** – Contentlayer-driven list of posts.
+7. **Contact** – social icons + mailto (full form deferred).
+
+### Assets & Placeholders
+* **Headshot** – `public/headshot-placeholder.jpg` (to be replaced).  
+* **Dog photo** – `public/dog-placeholder.jpg` (optional).  
+* **Mountain SVG** – low-opacity overlay in hero section.
+
+### MVP Deferred
+* Contact form backend  
+* Documentation tasks (IDs 11-17)  
+* OpenAI demo

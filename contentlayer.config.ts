@@ -17,7 +17,25 @@ export const Blog = defineDocumentType(() => ({
   },
 }));
 
+export const CaseStudy = defineDocumentType(() => ({
+  name: "CaseStudy",
+  filePathPattern: `case-studies/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+    date: { type: "date", required: true },
+    description: { type: "string", required: true },
+    technologies: { type: "list", of: { type: "string" } },
+  },
+  computedFields: {
+    slug: {
+      type: "string",
+      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
+    },
+  },
+}));
+
 export default makeSource({
   contentDirPath: "content",
-  documentTypes: [Blog],
+  documentTypes: [Blog, CaseStudy],
 });
