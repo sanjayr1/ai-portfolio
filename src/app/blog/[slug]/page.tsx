@@ -1,22 +1,17 @@
 import { notFound } from "next/navigation";
 import { allBlogs } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
-import type { MDXComponents } from "mdx/types";
-
-interface BlogPageProps {
-  params: { slug: string };
-}
 
 export const generateStaticParams = () => allBlogs.map((post) => ({ slug: post.slug }));
 
-export default function BlogPostPage({ params }: BlogPageProps) {
+export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = allBlogs.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
   const MDXContent = useMDXComponent(post.body.code);
 
   // You can customize MDX components if desired
-  const components: MDXComponents = {
+  const components = {
     // e.g. h1: (props) => <h1 className="text-3xl font-bold" {...props} />,
   };
 
