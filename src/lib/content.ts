@@ -6,7 +6,7 @@ import { compareDesc } from "date-fns";
  */
 export function getSortedPosts(): Blog[] {
   return allBlogs
-    .filter((post) => !(post as any).draft) // if you later add `draft` field
+    .filter((post) => !(post as Partial<Blog>).draft) // if you later add `draft` field
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
 }
 

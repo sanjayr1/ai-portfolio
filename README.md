@@ -1,6 +1,6 @@
 # AI Portfolio – Personal Website
 
-> **Purpose** – A modern, content-driven portfolio & blog built with Next.js.  The site showcases projects, publishes MDX articles, and serves as a living demo of full-stack skills.
+> **Purpose** – A modern, content-driven portfolio & blog built with Next.js. The site showcases projects, publishes MDX articles, and serves as a living demo of full-stack skills.
 
 ---
 
@@ -16,14 +16,14 @@
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|------------|
+| Layer     | Technology                                     |
+| --------- | ---------------------------------------------- |
 | Framework | [Next.js 15](https://nextjs.org/) (App Router) |
-| Language  | TypeScript 5 |
-| Styling   | Tailwind CSS 4 + shadcn/ui |
-| CMS       | Contentlayer 0.3 (local MDX) |
-| CI / CD   | GitHub Actions → Vercel |
-| Tooling   | ESLint 9 • Prettier 3 • Husky 9 • pnpm 9 |
+| Language  | TypeScript 5                                   |
+| Styling   | Tailwind CSS 4 + shadcn/ui                     |
+| CMS       | Contentlayer 0.3 (local MDX)                   |
+| CI / CD   | GitHub Actions → Vercel                        |
+| Tooling   | ESLint 9 • Prettier 3 • Husky 9 • pnpm 9       |
 
 ---
 
@@ -58,13 +58,13 @@ No secrets are committed; Vercel manages production variables in **Project Setti
 
 ## 📜 Available Scripts
 
-| Script | Purpose |
-|--------|---------|
-| `pnpm dev`   | Start Next.js in development mode |
-| `pnpm build` | Build production assets |
-| `pnpm start` | Start production server locally |
-| `pnpm lint`  | Run ESLint + TypeScript rules |
-| `pnpm format`| Format all supported files via Prettier |
+| Script        | Purpose                                 |
+| ------------- | --------------------------------------- |
+| `pnpm dev`    | Start Next.js in development mode       |
+| `pnpm build`  | Build production assets                 |
+| `pnpm start`  | Start production server locally         |
+| `pnpm lint`   | Run ESLint + TypeScript rules           |
+| `pnpm format` | Format all supported files via Prettier |
 
 ---
 
@@ -89,7 +89,7 @@ scripts/              # Taskmaster example PRD & utilities
 2. Build Command → `pnpm run build`
 3. Output Dir → `.next`
 4. Set environment variables as needed.
-5. Push to `main` → production deploy.  Pull Request branches get preview URLs automatically.
+5. Push to `main` → production deploy. Pull Request branches get preview URLs automatically.
 
 ---
 
@@ -103,13 +103,13 @@ The `CI` workflow lints, builds, and type-checks every commit.
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.  See [LICENSE](LICENSE) for details.
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
 
 ## 🙋‍♂️ Contributing
 
-Contributions are welcome!  A full guide will live in **CONTRIBUTING.md**.  In the meantime:
+Contributions are welcome! A full guide will live in **CONTRIBUTING.md**. In the meantime:
 
 1. Fork → feature branch (`feat/my-new-feature`).
 2. Ensure `pnpm lint` & `pnpm build` pass locally.
@@ -127,4 +127,4 @@ Feel free to reach out for collaboration, consultancy, or just to say hi!
 
 ---
 
-> _Generated with ❤️ & Taskmaster AI to assist future coding agents.  Happy hacking!_
+> _Generated with ❤️ & Taskmaster AI to assist future coding agents. Happy hacking!_
