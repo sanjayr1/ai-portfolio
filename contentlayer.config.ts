@@ -38,4 +38,14 @@ export const CaseStudy = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "content",
   documentTypes: [Blog, CaseStudy],
+  // @ts-expect-error - contentlayer types out of date, we still pass opts
+  esbuildOptions(opts: any) {
+    return {
+      ...opts,
+      define: {
+        ...(opts.define ?? {}),
+        "process.env.NODE_ENV": '"production"',
+      },
+    };
+  },
 });
