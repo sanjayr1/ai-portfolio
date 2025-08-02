@@ -4,8 +4,10 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 
 export const generateStaticParams = () => allBlogs.map((post) => ({ slug: post.slug }));
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = allBlogs.find((p) => p.slug === params.slug);
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+
+  const post = allBlogs.find((p) => p.slug === slug);
   if (!post) notFound();
 
   const MDXContent = useMDXComponent(post.body.code);
