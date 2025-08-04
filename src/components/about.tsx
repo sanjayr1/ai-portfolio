@@ -92,8 +92,8 @@ export default function About() {
                 startup, serving customer needs end-to-end.
               </li>
               <li>
-                • <strong>Ex-Twitch (Amazon) and ex-Meta data-platform engineer</strong>, owning petabyte-scale
-                ETL, schema-registry roll-outs, and analytics workflows.
+                • <strong>Ex-Twitch (Amazon) and ex-Meta data-platform engineer</strong>, owning
+                petabyte-scale ETL, schema-registry roll-outs, and analytics workflows.
               </li>
               <li>
                 • Passionate about streaming systems, LLM pipelines, and cloud cost optimisation.
