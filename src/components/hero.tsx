@@ -61,12 +61,12 @@ export default function Hero() {
               opacity: 0.8,
             }}
             onComplete={() => {
-              // Add a 3-second delay before restarting the animation
+              // Add a 4-second delay before restarting the animation
               setTimeout(() => {
                 // Force re-render to restart animation
                 setBirdsAnimationData(null);
                 setTimeout(() => setBirdsAnimationData(birdsAnimationData), 50);
-              }, 3000);
+              }, 4000);
             }}
           />
         </div>
@@ -101,7 +101,7 @@ export default function Hero() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Hi, I'm Sanjay
+          Hi, I&apos;m Sanjay
         </motion.h1>
 
         <motion.h2
